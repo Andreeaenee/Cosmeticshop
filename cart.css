@@ -1,0 +1,79 @@
+ table, h1, .total_cost, form{
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+}
+
+h1{
+    text-align: center;
+}
+
+tbody{
+    align-items: center;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    align-items: center;
+    text-align: center;
+  }
+  
+  td, th {
+    margin: 80px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+  table, th, tr, td{
+    width: 60%;
+  }
+
+.total_cost{
+    font-size: xx-large;
+}
+
+  form, .total_cost{
+    background-color: white;
+    text-align: right;
+  }
+
+  
+ input[type=submit] {
+    width: 40%;
+    height: 15%;
+    background-color: #f6f5ec;
+    color: #3f352c;
+    /* display: flex; */
+    place-self: center;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0.2px #a2968e;
+    text-align:center;
+  }
+ input[type=submit]:hover {
+    background-color: #b4a79e;
+    color: #ffffff;
+    transition: all ease 0.3s;
+    text-align: center;
+  }
+
+  @media  screen and (max-width: 600px) {
+
+    table,tr ,td{
+        align-content: center;
+        display: block;
+        margin: 0%;
+        flex-wrap: wrap;
+    }
+     table tr td {
+        width: fit-content;
+     }
+     table tr td h3{
+        font-size: small;
+        font-weight: 200;
+     }
+} 

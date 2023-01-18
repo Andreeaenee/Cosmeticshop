@@ -1,0 +1,64 @@
+.p-container {
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 80%;
+}
+
+.p-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-col {
+  width: 40%;
+  padding: 10px 10px;
+}
+
+form {
+  width: 100%;
+  background-color: rgb(223, 221, 214);
+  align-items: center;
+  align-content: center;
+}
+
+
+.p-container input[type=submit] {
+  width: 100%;
+  height: 15%;
+  margin: 0;
+  background-color: #f6f5ec;
+  color: #3f352c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.3s;
+  border-radius: 15px;
+  box-shadow: 3px 3px 0.2px #a2968e;
+}
+
+.p-container input[type=submit]:hover {
+  background-color: #b4a79e;
+  color: #ffffff;
+  transition: all ease 0.3s;
+}
+
+
+@media  screen and (max-width: 600px) {
+
+  table,tr ,td{
+      align-content: center;
+      display: block;
+      margin: 0%;
+      flex-wrap: wrap;
+  }
+   table tr td {
+      width: fit-content;
+   }
+   table tr td h3{
+      font-size: small;
+      font-weight: 200;
+   }
+   .p-col{
+    width: 50%;
+}
+} 

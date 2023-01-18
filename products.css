@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* #product{
+    display:flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 50px auto;
+ } */
+  .product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-left:5% ;
+    margin-right:5%;
+    } 
+    
+    a:link {
+        text-decoration: none;
+      }
+
+ .product-box{
+    width: 100%;
+    border: 1px solid #eeeeee;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+   
+  }
+  
+  .product-box img{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    object-position: center;
+    color: white;
+  }
+
+  
+ .product-box strong{
+    background-color: white;
+    color: #383737;
+    font-size: small;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-top: 10px;
+    font-style: none;
+  }
+  .product-box .price{
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #393939;
+    background-color: white;
+    text-align: right;
+    
+  }
+
+  .product-box  #cart-btn{
+    width: 100%;
+    height: 15%;
+    background-color: #f6f5ec;
+    color: #3f352c;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: all ease 0.3s;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0.2px #a2968e;
+    font-size: large;
+    margin-top: 2%;
+  }
+  
+  
+  .product-box #cart-btn:hover{
+    font-size: large;
+    background-color: #b4a79e;
+    color: #ffffff;
+    transition: all ease 0.3s;
+  } 
+
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+   
+  .product-box .star{
+    width: 16px;
+    height: 16px;
+    position:absolute;
+    right: 30px;
+    top: 20px;
+    color: pink;
+    font-size: 1.3rem;
+    background-color: white;
+  }
+
+  .product-box p{
+    visibility: hidden;
+    background-color: white;
+    font-size: small;
+    color: #393939;
+  }
+
+  
+  @media screen and (max-width: 600px){
+    .product-container{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin-left:2% ;
+        margin-right:2%;
+        } 
+     .product-box .price{
+        font-size: 1.0rem;
+     }
+     .product-box strong{
+        font-size: x-small;
+     }
+     .product-box  #cart-btn{
+        font-size: small;
+     }
+     .product-box #cart-btn:hover{
+        font-size: small;
+     }
+
+  } 
